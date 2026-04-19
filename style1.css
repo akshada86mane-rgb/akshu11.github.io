@@ -1,0 +1,624 @@
+/* BODY */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    position: relative;
+}
+
+/* Background Glow Effect */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #38bdf8;
+    filter: blur(120px);
+    top: 50px;
+    left: 50px;
+    z-index: -1;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #cbd5f5;
+}
+
+/* IMAGE */
+.hero-img img {
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* BUTTONS */
+.btn {
+    background: #38bdf8;
+    color: black;
+    padding: 12px 22px;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* SECTION */
+section {
+    padding: 60px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* GLASS CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    width: 260px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+/* CORNER LINKEDIN */
+.corner-social {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.corner-social a {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.corner-social a:hover {
+    background: #38bdf8;
+    color: black;
+}
+
+/* FOOTER */
+.footer {
+    background: #020617;
+    text-align: center;
+    padding: 40px;
+}
+
+.email a {
+    color: #cbd5f5;
+    text-decoration: none;
+}
+
+.email a:hover {
+    color: #38bdf8;
+}
+
+.linkedin-btn {
+    display: inline-block;
+    background: #0A66C2; /* LinkedIn color */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+    
+}
+
+.linkedin-btn i {
+    margin-right: 8px;
+}
+
+.linkedin-btn:hover {
+    background: #004182;
+    transform: scale(1.05);
+}
+
+section h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* COMMON CARDS */
+.cards, .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* WHAT I DO */
+.work-section {
+    padding: 60px;
+    text-align: center;
+}
+
+.work-section .card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    width: 260px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.work-section .card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.work-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(56,189,248,0.3);
+}
+
+/* SKILLS */
+.skills-section {
+    padding: 60px;
+    text-align: center;
+}
+
+.skill-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    width: 260px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.skill-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    border: 1px solid #38bdf8;
+}
+
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 60px;
+    justify-content: center;
+}
+
+/* CARD STYLE */
+.profile-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    width: 280px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 25px rgba(56,189,248,0.3);
+}
+
+.profile-card h2 {
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    color: #cbd5f5;
+    margin: 5px 0;
+}
+
+/* LINKS */
+.profile-card a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.profile-card a:hover {
+    text-decoration: underline;
+}
+
+/* LANGUAGE BARS */
+.lang-bar {
+    background: rgba(255,255,255,0.1);
+    height: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.lang-bar div {
+    height: 8px;
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* HERO LAYOUT */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px;
+    gap: 50px;
+}
+
+/* LEFT */
+.hero-left {
+    flex: 1;
+}
+
+.hero-left h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero-left p {
+    color: #cbd5f5;
+}
+
+/* BUTTONS */
+.btn {
+    background: #38bdf8;
+    color: black;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.linkedin-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #0A66C2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* RIGHT SIDE */
+.hero-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CARD STYLE */
+.info-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 20px rgba(56,189,248,0.3);
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+}
+
+/* LINKS */
+.info-card a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+}
+
+/* LANGUAGE BARS */
+.lang-bar {
+    background: rgba(255,255,255,0.1);
+    height: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.lang-bar div {
+    height: 8px;
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px;
+    }
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px;
+    justify-content: center;
+}
+
+.info-card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+}
+
+.lang-bar {
+    height: 6px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.lang-bar div {
+    height: 6px;
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 60px;
+}
+
+/* BASE CARD */
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* CONTACT CARD (BIGGER) */
+.contact-card {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #0caded;
+}
+
+.contact-card a {
+    color: hsl(315, 27%, 94%);
+    text-decoration: none;
+}
+
+/* LANGUAGE */
+.lang-bar {
+    height: 6px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.lang-bar div {
+    height: 6px;
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
+/* TECH TAGS */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tags span {
+    background: #1e293b;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* SOFT SKILLS */
+.soft-card ul {
+    padding-left: 20px;
+}
+
+.soft-card li {
+    margin-bottom: 5px;
+}
+
+.footer-line {
+    text-align: center;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.footer-line span {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.about-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 4px solid #38bdf8;
+    max-width: 500px;
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(56,189,248,0.3);
+}
+
+.about-card h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+/* TEXT */
+.about-card p {
+    color: #cbd5f5;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* HIGHLIGHT WORDS */
+.about-card span {
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.cert-section {
+    padding: 60px;
+    text-align: center;
+}
+
+.cert-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* CARD */
+.cert-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    width: 260px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: 0.3s;
+}
+
+.cert-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 20px rgba(56,189,248,0.3);
+}
+
+.cert-card h3 {
+    margin-bottom: 10px;
+}
+
+.cert-card p {
+    color: #cbd5f5;
+}
+
+.core-strengths {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.core-strengths h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.strengths-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1e1e2f;
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #bbb;
+}
